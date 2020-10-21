@@ -22,7 +22,7 @@ There are some guildelines which everyone should follow while contributing to th
 
 ## 1. Fork the Repository
 
-First step is to fork this repository (rahulsain3000/MemeIt) to your GitHub account. You can do this by clicking on the Fork button provided in the top right corner of the repo page. 
+First step is to fork this repository (rahulsain3000/MyNews) to your GitHub account. You can do this by clicking on the Fork button provided in the top right corner of the repo page. 
 
 
 Also, star and watch the repository to receive all the updates directly to your mail.
@@ -32,9 +32,9 @@ Also, star and watch the repository to receive all the updates directly to your 
 ## 2. Clone the forked repo to your system
 
 Clone the repository that you just forked into your account.
-Be careful to clone the forked repo (your-username/MemeIt) and not the main repo (rahulsain3000/MemeIt) as making direct changes to the main repo will result in conflict of code and lack of co-ordination as we proceed further.
+Be careful to clone the forked repo (your-username/MyNews) and not the main repo (rahulsain3000/MyNews) as making direct changes to the main repo will result in conflict of code and lack of co-ordination as we proceed further.
 
-The forked repository will have your username in the top left corner and the clone link will also contain your username (https://github.com/your-username/MemeIt.git).
+The forked repository will have your username in the top left corner and the clone link will also contain your username (https://github.com/your-username/MyNews.git).
 
 
 **How to Clone a forked repo? - [YouTube Link](https://youtu.be/HbSjyU2vf6Y?t=134)**
@@ -45,7 +45,7 @@ Now, you have the repository on your system and you are ready to make changes. B
 
 To avoid any conflicts, you need to pull all the changes from the main repository. 
 
-So, after cloning the forked repository (your-username/MemeIt) to your system, use the command `git remote add upstream https://github.com/rahulsain3000/MemeIt.git` to point to the main repository. You only need to do this once.
+So, after cloning the forked repository (your-username/MyNews) to your system, use the command `git remote add upstream https://github.com/rahulsain3000/MyNews.git` to point to the main repository. You only need to do this once.
 
 Now, after making any changes to your project on the system, follow these simple steps to push your work to the repository:
 
@@ -61,7 +61,7 @@ Now, after making any changes to your project on the system, follow these simple
 
 ## 4. Create a pull request
 
-After pushing the changes to your forked repository (your-username/MemeIt), all you have to do is create a new pull request from your account by simply clicking on the *Pull Request* button.
+After pushing the changes to your forked repository (your-username/MyNews), all you have to do is create a new pull request from your account by simply clicking on the *Pull Request* button.
 
 
 
