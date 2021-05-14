@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity(), NewsItemClicked {
         recyclerView.adapter = mAdapter
     }
     private fun fetchData() {
-        val url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=9f6b47bffda142e8a874d8c377460db8"
+        val url = "https://saurav.tech/NewsAPI/top-headlines/category/health/in.json"
         val jsonObjectRequest = JsonObjectRequest(
             Request.Method.GET,
             url,
@@ -31,20 +31,21 @@ class MainActivity : AppCompatActivity(), NewsItemClicked {
             {
                 val newsJsonArray = it.getJSONArray("articles")
                 val newsArray = ArrayList<News>()
-                for(i in 0 until newsJsonArray.length()){
+                for (i in 0 until newsJsonArray.length()) {
                     val newsJsonObject = newsJsonArray.getJSONObject(i)
                     val news = News(
-                        newsJsonObject.getString("title"),newsJsonObject.getString("author")
-                        ,newsJsonObject.getString("url"),newsJsonObject.getString("urlToImage")
+                        newsJsonObject.getString("title"),
+                        newsJsonObject.getString("author"),
+                        newsJsonObject.getString("url"),
+                        newsJsonObject.getString("urlToImage")
                     )
                     newsArray.add(news)
                 }
                 mAdapter.updateNews(newsArray)
             },
             {
-
-            }
-        )
+                Toast.makeText(this, "Error : " + it.message, Toast.LENGTH_SHORT).show()
+            })
         MySingleton.getInstance(this).addtoRequestQueue(jsonObjectRequest)
     }
 
